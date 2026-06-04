@@ -37,6 +37,41 @@ To fund transactions on Sepolia, I used the Google faucet to get free Sepolia ET
 - Initial supply: `1,000,000` tokens
 - Decimals: `18`
 
+## Deployment
+
+To deploy the token yourself:
+
+1. Clone the project:
+   ```bash
+   git clone <repo-url>
+   ```
+2. Add a `.env` file under `code/` with:
+   ```env
+   SEPOLIA_RPC_URL=
+   PRIVATE_KEY=
+   ```
+3. Install dependencies:
+   ```bash
+   cd code
+   npm install
+   ```
+4. Run tests:
+   ```bash
+   npx hardhat test
+   ```
+5. Deploy to Sepolia:
+   ```bash
+   npx hardhat run scripts/deploy.ts --network sepolia
+   ```
+
+- `SEPOLIA_RPC_URL` can be obtained from Alchemy.
+- `PRIVATE_KEY` comes from your MetaMask account and must include the `0x` prefix.
+
+### Troubleshooting
+
+- `INSUFFICIENT_FUNDS` on deploy → get Sepolia ETH from a faucet.
+- `No account provided` / bad key → ensure `PRIVATE_KEY` in `code/.env` includes the `0x` prefix.
+
 ## Smart contract features
 
 The token contract includes the standard ERC20 functionality plus additional features to support the website:
@@ -59,4 +94,4 @@ The website for the token includes:
 - a “buy a surprise” feature where users can enter their email, pay with tokens, and receive a surprise in their inbox
 
 ## Conclusion
-This project was a great learning experience in blockchain development, smart contract programming, and frontend integration. 
+This project was a great learning experience in blockchain development, smart contract programming, and frontend integration of web3. 
