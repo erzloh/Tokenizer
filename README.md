@@ -74,7 +74,7 @@ To deploy the token yourself:
 
 ## Smart contract features
 
-The token contract includes the standard ERC20 functionality plus additional features to support the website:
+The token contract includes the standard ERC20 functionality plus additional features to support a dashboard website I made for interacting with the token.
 
 - `claim()` for a faucet-style token claim directly from the website
 - `mint(address, amount)` so the contract owner can mint new tokens and send them to a specified address
