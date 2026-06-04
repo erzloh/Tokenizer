@@ -36,6 +36,7 @@ To fund transactions on Sepolia, I used the Google faucet to get free Sepolia ET
 - Symbol: `E42`
 - Initial supply: `1,000,000` tokens
 - Decimals: `18`
+- Contract address: `0xcBF6A05ce962a97cfd7a29D6Dad98BEFAAfDe885`
 
 ## Deployment
 
